@@ -12,7 +12,7 @@ exports.seed = function(knex) {
 
         // Insert a single paper, return the paper ID, insert 2 footnotes
         knex('papers').insert({
-          title: 'Fooo', author: 'Bob', publisher: 'Minnesota'
+          title: 'Foo', author: 'Bob', publisher: 'Minnesota'
         }, 'id')
         .then(paper => {
           return knex('footnotes').insert([
